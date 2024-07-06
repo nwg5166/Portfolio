@@ -10,8 +10,12 @@ body {
   flex: 1;
 }
 
+.logo {
+  width: 100px;
+}
+
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 footer {
