@@ -5,42 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Portfolio</title>
-    <link href="index.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to My Career Portfolio!</h1>
+    <div id="PageContainer">
     
-    <a href="./public/about.html" ><Image src="./assets/images/aiportrait (3).png" height="100" alt="cat"/></a>
-    <h3> I am a Strategy, Finance, and Technology Consultant.</h3>
-    <p>Please click my picture for my about me.</p>
-    
-    <hr />
+        <div Class="NavBarContainer">
+            <h2>Nikko</h2>
+            <img src="./assets/images/AmericanFlag.png"/>
+            <a href="./Projects.html">Projects</a>
+            <a href="./public/about.html">About Me</a>
+            <a href="./public/contact.html">Contact Me</a>
 
-    <h2>Public Projects:</h2>
-    <a href="./public/CreativeAgency.html"><h3>Creative Agency Responsive Design</h3></a>
-    <a href="./public/CreativeAgency.html"><img src="./assets/images/CreativeAgency.png"/></a>
-    <a href="./public/MemeProject.html"><h3>Meme Project</h3></a>
-    <a href="./public/MemeProject.html"><image src="./assets/images/MemeProject.png" height="300"/></a>
-    
-    <a href="./public/SpanishVocab.html"><h3>Spanish Color Vocab</h3></a>
-    <a href="./public/SpanishVocab.html"><img src="./assets/images/SpanishVocab.png" height="300"/></a>
+        </div>
+        <div class="WelcomeContent">
+            <h1 id="WelcomeMessage">Welcome to My Career Portfolio!</h1>
+            <Image src="./assets/images/AirPortraitNoBorder.png" height="100" alt="Me" ID="ProPic"/>
+            <h3> I am a Strategy, Finance, and Technology Consultant.</h3>
+            <p>Please click my picture for my about me.</p>
+        </div>
+        <hr />
+        <div class="Experience-Education">
+            <div class="Education">
+                <h2>Education</h2>
+                <h3>Pennsylvania State University</h3>
+                <hr />
+                <ul>
+                    <li>Masters of Science in Corporate Finance</li>
+                    <li>Masters of Science in Management & Organizational Leadership</li>
+                    <li>Bachelors of Science in Economics</li>
+                </ul>
+            
+            </div>
+            <div class="Experience">
+                <h2>Experience</h2>
+                <ul>
+                    <li>
+                        <h3>Deloitting Consulting</h3>
+                        <p>Finance & Performance Consultant</p>
+                    </li>
 
-    <a href="./public/CSSSelectors.html"><h3>CSS Selectors</h3></a>
-    <a href="./public/CSSSelectors.html"><img src="assets/images/CSSSelectors.png" height="300" alt="picture of CSS Selector Preview"/></a>
+                    <li>
+                        <h3>Allied Millenial Partners</h3>
+                        <p>Equity Summer Analyst</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ProjectPreview"> 
+            <div id="ProjectPreviewHeader">
+                <h1>Have a look at my Publicly Available Projects</h1>
+                <p>These are personal projects I created while learning software development in the past three months (7/24)</p>
+            </div>
+            <div class="ProjectPreviewCardContainer">
+                <div class="ProjectPreviewCard" id="PPBox1">
+                    <img src="./assets/images/CreativeAgency.png" height="300px"/>
+                    <h3>Creative Agency</h3>
+                    <p>Craeted a example homepage with responsive design.</p>
+                </div>
+                <div class="ProjectPreviewCard" id="PPBox2">
+                    <h3>Project 2</h3>
+                    <p>Project Description</p>
+                </div>
+                <div class="ProjectPreviewCard" id="PPBox3">
+                    <h3>Project 3</h3>
+                    <p>Project Description</p>
+                </div>
+            </div>
+        </div>
 
-    <a href="./Resume.html/"><h3>Resume</h3></a>
-    <a href="./Resume.html/"><img src="./assets/images/Resume.png" height="300"></a>
-
-    <a href="./public/movie-ranking.html"><h3>Movie Rankings</h3></a>
-    <a href="./public/movie-ranking.html"><img src="./assets/images/MovieRankings.png" height="300"></a>
-
-    <a href="./public/birthday-invite.html"><h3>Birthday Party Invite</h3></a>
-    <a href="./public/birthday-invite.html"><img src="./assets/images/BirthdayParty.png" height="300"></a>
-
-    <hr>
-
-    <a href="./public/contact.html">Contact Me</a> <br />
-    <a href="./public/about.html">About Me</a>
-    
+    </div>
 </body>
 </html>

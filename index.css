@@ -1,7 +1,218 @@
 * {
-    width: 100%
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Work Sans", sans-serif;
+  }
+
+p{
+    font-family: "Work Sans", sans-serif;
 }
 
 body {
-    width: 100%
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+#PageContainer {
+    width: 100vw;
+    background-color:bisque;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.NavBarContainer {
+    width: 100%;
+    background-color: red;
+    height: 50px;
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.NavBarContainer img {
+    height: 32px;
+    margin-left: 10px;
+}
+
+.NavBarContainer h2 {
+    margin-left: 100px;
+    color: lightskyblue;
+}
+
+.NavBarContainer a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.WelcomeContent {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.WelcomeContent {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    margin-top: 50px;
+
+}
+
+#ProPic {
+    width: 250px;
+    height: 250px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+/*Education and Experience Container */
+.Experience-Education {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: navy;
+    margin: 0;
+    padding: 40px;
+    gap: 20px;
+}
+
+
+/* Education Card */
+.Education {
+    width: 40%;
+    height: 170px;
+    display: inline;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.Education h2 {
+    color: navy;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.Education h3 {
+    color: navy;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.Education ul {
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+
+/* Experience Card */
+
+.Experience {
+    width: 40%;
+    display: inline;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    height: 170px;
+}
+
+.Experience h2 {
+    color: navy;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.Experience li {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.Experience h3{
+    color: navy;
+}
+
+@media (max-width:1250px) {
+    .Experience-Education {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Experience {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .Education {
+        width: 80%;
+    }
+}
+
+
+/* Start of Project Previews*/ 
+
+.ProjectPreview {
+    width: 100vw;
+    height: 900px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(202, 139, 21);
+}
+
+#ProjectPreviewHeader {
+    text-align: center;
+} 
+
+#ProjectPreviewHeader h1 {
+    color: navy;
+}
+
+.ProjectPreviewCardContainer {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
