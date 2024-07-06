@@ -20,7 +20,13 @@ h1 {
 
 footer {
   text-align: right;
+}
+footer p {
   color: midnightblue;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 .tile-image {
@@ -73,3 +79,5 @@ footer {
     object-fit: cover;
   }
 }
+
+
