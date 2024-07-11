@@ -30,21 +30,32 @@ p{
     align-items: center;
 }
 
+
 .NavBarContainer img {
     height: 32px;
     margin-left: .5%;
     flex: 0 0 auto;
 }
 
+
+
 @media (max-width: 768px) {
+    .NavBarContainer h2 {
+        margin-left: 0%;
+    }
+
     .NavBarContainer img {
         margin-left: .7rem;
+    }
+
+    .NavLinks {
+        margin-left: 0;
     }
     
 }
 
 .NavBarContainer h2 {
-    margin-left: 10%;
+    margin-left: 7%;
     color: lightskyblue;
 }
 
@@ -104,7 +115,7 @@ p{
 
 .Experience-Education {
     width: 100%;
-    height: 300px;
+    height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -115,11 +126,16 @@ p{
     gap: 20px;
 }
 
+.Card ul {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
 
 /* Education Card */
 .Education {
     width: 40%;
-    height: 170px;
+    height: 200px;
     display: inline;
     flex-direction: column;
     justify-content: flex-start;
@@ -130,7 +146,7 @@ p{
 
 .Education h2 {
     color: navy;
-    padding-top: 2px;
+    padding-top: 0px;
     padding-bottom: 2px;
     padding-left: 20px;
     margin-bottom: 20px;
@@ -147,6 +163,7 @@ p{
 .Education ul {
     margin-top: 5px;
     margin-left: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -160,7 +177,7 @@ p{
     align-items: center;
     background-color: rgb(255, 255, 255);
     margin: 0;
-    height: 170px;
+    height: 200px;
 }
 
 .Experience h2 {
@@ -182,7 +199,7 @@ p{
     color: navy;
 }
 
-@media (max-width:795px) {
+@media (max-width:990px) {
     .Box {
         padding-top: 90px;
     }
