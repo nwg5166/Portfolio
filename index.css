@@ -22,7 +22,7 @@ p{
 
 .NavBarContainer {
     width: 100%;
-    background-color: rgb(21, 0, 255);
+    background-color: navy;
     height: 50px;
     display: flex;
     position: fixed;
