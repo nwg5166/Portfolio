@@ -199,14 +199,14 @@ p{
     color: navy;
 }
 
-@media (max-width:990px) {
+@media (max-width:1050px) {
     .Box {
         padding-top: 90px;
     }
 
     .Experience-Education {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
         height: 1000px;
     }
     .Card {
