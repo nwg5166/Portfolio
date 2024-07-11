@@ -12,13 +12,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Work Sans", sans-serif;
-  }
-
-p{
-    font-family: "Work Sans", sans-serif;
 }
 
-
+p {
+    font-family: "Work Sans", sans-serif;
+}
 
 .NavBarContainer {
     width: 100%;
@@ -30,28 +28,10 @@ p{
     align-items: center;
 }
 
-
 .NavBarContainer img {
     height: 32px;
     margin-left: .5%;
     flex: 0 0 auto;
-}
-
-
-
-@media (max-width: 768px) {
-    .NavBarContainer h2 {
-        margin-left: 0%;
-    }
-
-    .NavBarContainer img {
-        margin-left: .7rem;
-    }
-
-    .NavLinks {
-        margin-left: 0;
-    }
-    
 }
 
 .NavBarContainer h2 {
@@ -72,10 +52,37 @@ p{
     margin-left: 3.5%;
 }
 
+@media (max-width: 768px) {
+    .NavBarContainer h2 {
+        margin-left: 10px;
+    }
+
+    .NavBarContainer img {
+        margin-left: .7rem;
+    }
+
+    .NavLinks {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    .NavBarContainer h2 {
+        margin-left: 10px !important; /* Ensure this rule takes precedence */
+    }
+
+    .NavBarContainer img {
+        margin-left: .7rem;
+    }
+
+    .NavLinks {
+        margin-left: 0;
+    }
+}
 
 .PageContainer {
     width: 100%;
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -109,9 +116,7 @@ p{
 
 .Box {
     margin-bottom: 7rem;
-
 }
-
 
 .Experience-Education {
     width: 100%;
@@ -131,12 +136,11 @@ p{
     padding-bottom: 20px;
 }
 
-
 /* Education Card */
 .Education {
     width: 40%;
     height: 200px;
-    display: inline;
+    display: inline-block;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -165,12 +169,10 @@ p{
     margin-left: 50px;
 }
 
-
 /* Experience Card */
-
 .Experience {
     width: 40%;
-    display: inline;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -194,11 +196,11 @@ p{
     margin-bottom: 10px;
 }
 
-.Experience h3{
+.Experience h3 {
     color: navy;
 }
 
-@media (max-width:1050px) {
+@media (max-width: 1050px) {
     .Box {
         padding-top: 90px;
     }
@@ -208,6 +210,7 @@ p{
         gap: 1rem;
         height: 800px;
     }
+
     .Card {
         width: 95%;
         height: 250px;
@@ -220,15 +223,9 @@ p{
     .Education li {
         margin-bottom: 4px;
     }
-    
 }
 
 hr {
     width: 100%;
     border: 1px solid navy;
 }
-
-
-
-
-
