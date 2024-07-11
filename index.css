@@ -210,8 +210,16 @@ p{
         height: 1000px;
     }
     .Card {
-        width: 90%;
-        height: 200px
+        width: 95%;
+        height: 250px;
+    }
+
+    .Card ul {
+        padding-right: 10px;
+    }
+
+    .Education li {
+        margin-bottom: 4px;
     }
     
 }
