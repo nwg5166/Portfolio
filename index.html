@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css"/>
     <title>Document</title>
-
 </head>
 <body>
     <div class="NavBarContainer">
         <h2>Nikko</h2>
         <img src="./assets/images/AmericanFlag.png"/>
+        <button class="hamburger" id="hamburger">&#9776;</button>
         <div class="NavLinks">
             <a href="./Projects.html">Projects</a>
             <a href="./public/about.html">About Me</a>
@@ -20,8 +20,8 @@
     <div class="PageContainer">
         <div class="Box Box1">
             <h1>Welcome to My Career Portfolio!</h1>
-            <img src="./assets/images/AirPortraitNoBorder.png" alt="Me" ID="ProPic"/>
-            <h3> I am a Strategy, Finance, and Technology Consultant.</h3>
+            <img src="./assets/images/AirPortraitNoBorder.png" alt="Me" id="ProPic"/>
+            <h3>I am a Strategy, Finance, and Technology Consultant.</h3>
         </div>
         <!--  This is the start of Experience-Education -->
         <div class="Experience-Education">
@@ -41,7 +41,6 @@
                         <h3>Deloitting Consulting</h3>
                         <p>Finance & Performance Consultant</p>
                     </li>
-
                     <li>
                         <h3>Allied Millenial Partners</h3>
                         <p>Equity Summer Analyst</p>
@@ -50,6 +49,10 @@
             </div>
         </div>
     </div>
-    
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.querySelector('.NavLinks').classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
