@@ -1,46 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Portfolio</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css"/>
+    <title>Document</title>
+
 </head>
 <body>
-    <div id="PageContainer">
-    
-        <div Class="NavBarContainer">
-            <h2>Nikko</h2>
-            <img src="./assets/images/AmericanFlag.png"/>
+    <div class="NavBarContainer">
+        <h2>Nikko</h2>
+        <img src="./assets/images/AmericanFlag.png"/>
+        <div class="NavLinks">
             <a href="./Projects.html">Projects</a>
             <a href="./public/about.html">About Me</a>
             <a href="./public/contact.html">Contact Me</a>
-
         </div>
-        <div class="WelcomeContent">
-            <h1 id="WelcomeMessage">Welcome to My Career Portfolio!</h1>
-            <Image src="./assets/images/AirPortraitNoBorder.png" height="100" alt="Me" ID="ProPic"/>
+    </div>
+    <div class="PageContainer">
+        <div class="Box Box1">
+            <h1>Welcome to My Career Portfolio!</h1>
+            <img src="./assets/images/AirPortraitNoBorder.png" alt="Me" ID="ProPic"/>
             <h3> I am a Strategy, Finance, and Technology Consultant.</h3>
             <p>Please click my picture for my about me.</p>
         </div>
-        <hr />
+        <!--  This is the start of Experience-Education -->
         <div class="Experience-Education">
-            <div class="Education">
+            <div class="Card Education">
                 <h2>Education</h2>
                 <h3>Pennsylvania State University</h3>
-                <hr />
                 <ul>
                     <li>Masters of Science in Corporate Finance</li>
                     <li>Masters of Science in Management & Organizational Leadership</li>
                     <li>Bachelors of Science in Economics</li>
                 </ul>
-            
             </div>
-            <div class="Experience">
+            <div class="Card Experience">
                 <h2>Experience</h2>
                 <ul>
                     <li>
@@ -55,28 +50,7 @@
                 </ul>
             </div>
         </div>
-        <div class="ProjectPreview"> 
-            <div id="ProjectPreviewHeader">
-                <h1>Have a look at my Publicly Available Projects</h1>
-                <p>These are personal projects I created while learning software development in the past three months (7/24)</p>
-            </div>
-            <div class="ProjectPreviewCardContainer">
-                <div class="ProjectPreviewCard" id="PPBox1">
-                    <img src="./assets/images/CreativeAgency.png" height="300px"/>
-                    <h3>Creative Agency</h3>
-                    <p>Craeted a example homepage with responsive design.</p>
-                </div>
-                <div class="ProjectPreviewCard" id="PPBox2">
-                    <h3>Project 2</h3>
-                    <p>Project Description</p>
-                </div>
-                <div class="ProjectPreviewCard" id="PPBox3">
-                    <h3>Project 3</h3>
-                    <p>Project Description</p>
-                </div>
-            </div>
-        </div>
-
     </div>
+    
 </body>
 </html>
