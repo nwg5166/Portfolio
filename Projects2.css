@@ -17,7 +17,6 @@ body {
     align-items: center;
     width: 100%;
     margin: 0;
-    
 }
 
 .CardsContainer {
@@ -25,12 +24,10 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 2rem;
     margin-top: 100px;
-    max-width: 1200px; /* Adjust this value as needed */
-    width: 100%;
+    max-width: 100%;
+    width: calc(100% - 2rem); /* To account for padding */
     padding: 0 1rem; /* Optional padding */
-    margin: 0 auto; /* Center the container */
     justify-content: center;
-    align-items: center;
 }
 
 .card {
@@ -78,26 +75,14 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
+@media (max-width: 601px) {
     .CardsContainer {
-        grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 18rem));
     }
 }
 
-@media (max-width: 768px) {
-    .CardsContainer {
-        grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
-    }
-}
 
-@media (max-width: 576px) {
-    .CardsContainer {
-        grid-template-columns: auto-fit, 1fr;
-        gap: 3rem;
-    }
-}
-
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .CardsContainer {
         grid-template-columns: 1fr;
     }
