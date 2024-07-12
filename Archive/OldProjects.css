@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Work Sans", sans-serif;
+}
+
+p {
+    font-family: "Work Sans", sans-serif;
+}
+
+.NavBarContainer {
+    width: 100%;
+    background-color: navy;
+    height: 50px;
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.NavBarContainer img {
+    height: 32px;
+    margin-left: .5%;
+    flex: 0 0 auto;
+}
+
+.NavBarContainer h2 {
+    margin-left: 7%;
+    color: lightskyblue;
+}
+
+.NavBarContainer a {
+    text-decoration: none;
+    color: white;
+}
+
+.NavLinks {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 1rem;
+    margin-left: 3.5%;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .NavBarContainer h2 {
+        margin-left: 10px;
+    }
+
+    .NavBarContainer img {
+        margin-left: .7rem;
+    }
+
+    .NavLinks {
+        margin-left: .7rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .NavLinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: navy;
+    }
+
+    .NavLinks.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+.ProjectsContainer {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 10%;
+    padding-top: 50px;
+}
+
+.ProjectCard {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.ProjectsContainer img {
+    height: 250px;
+    width: 250px;
+}
+
+#CSSSelector {
+    Height: 250px;
+    width: 500px;
+}

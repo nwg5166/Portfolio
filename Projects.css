@@ -5,124 +5,85 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Work Sans", sans-serif;
     background-color: #f5f5f5;
-    height: auto;
     display: flex;
     flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Work Sans", sans-serif;
-}
-
-p {
-    font-family: "Work Sans", sans-serif;
-}
-
-.NavBarContainer {
+.PageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    margin: 0;
+}
+
+.CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 18rem);
+    gap: 2rem;
+    margin-top: 100px;
+    max-width: 100%;
+    width: calc(100% - 2rem); /* To account for padding */
+    padding: 0 1rem; /* Optional padding */
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    border: 2px solid #c1b9b9;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+    background-color: black;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 170px;
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: navy;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: navy;
+}
+
+.btn {
     background-color: navy;
-    height: 50px;
-    display: flex;
-    position: fixed;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.NavBarContainer img {
-    height: 32px;
-    margin-left: .5%;
-    flex: 0 0 auto;
-}
-
-.NavBarContainer h2 {
-    margin-left: 7%;
-    color: lightskyblue;
-}
-
-.NavBarContainer a {
-    text-decoration: none;
     color: white;
-}
-
-.NavLinks {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    gap: 1rem;
-    margin-left: 3.5%;
-}
-
-.hamburger {
-    display: none;
-    font-size: 24px;
-    background: none;
     border: none;
-    color: white;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: 10px;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    border-radius: .375rem;
+    margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
-    .NavBarContainer h2 {
-        margin-left: 10px;
-    }
-
-    .NavBarContainer img {
-        margin-left: .7rem;
-    }
-
-    .NavLinks {
-        margin-left: .7rem;
+/* Responsive Design */
+@media (max-width: 601px) {
+    .CardsContainer {
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 18rem));
     }
 }
 
-@media (max-width: 400px) {
-    .NavLinks {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        background-color: navy;
+
+@media (max-width: 600px) {
+    .CardsContainer {
+        grid-template-columns: 18rem;
     }
-
-    .NavLinks.show {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-    }
-}
-
-.ProjectsContainer {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    gap: 10%;
-    padding-top: 50px;
-}
-
-.ProjectCard {
-    height: 300px;
-    width: 300px;
-    margin-bottom: 50px;
-}
-
-.ProjectsContainer img {
-    height: 250px;
-    width: 250px;
-}
-
-#CSSSelector {
-    Height: 250px;
-    width: 500px;
 }
