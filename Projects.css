@@ -31,8 +31,10 @@ body {
 }
 
 .card {
-    width: 100%;
+    width: 18rem;
     border: 2px solid #c1b9b9;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-img-top {
@@ -45,10 +47,10 @@ body {
 .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 170px;
+    height: 200px; /* Adjust this value as needed */
     padding: 1rem;
 }
 
@@ -57,11 +59,13 @@ body {
     font-weight: bold;
     margin-bottom: 1rem;
     color: navy;
+    text-align: center;
 }
 
 .card-text {
     font-size: 1rem;
     color: navy;
+    text-align: center;
 }
 
 .btn {
@@ -69,8 +73,8 @@ body {
     color: white;
     border: none;
     padding: 10px 20px;
-    margin-top: 1rem;
     border-radius: .375rem;
+    margin-top: auto; /* Push the button to the bottom */
     margin-bottom: 1rem;
 }
 
@@ -80,7 +84,6 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(18rem, 18rem));
     }
 }
-
 
 @media (max-width: 600px) {
     .CardsContainer {
