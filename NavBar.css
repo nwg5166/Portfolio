@@ -55,7 +55,7 @@ body {
     border: none; /* Ensure no border */
     padding: 0; /* Remove any padding */
     border-radius: 0; /* Remove any border radius */
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 0;
 }
 
