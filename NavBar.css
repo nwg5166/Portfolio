@@ -60,7 +60,7 @@ body {
     color: white;
 }
 
-@media (max-width: 461px) {
+@media (max-width: 490px) {
     .NavLinks {
         display: none;
         flex-direction: column;

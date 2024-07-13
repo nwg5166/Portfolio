@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./Projects.css">
-    <link rel="stylesheet" href="./Navbar.css">
+    <link rel="stylesheet" href="./NavBar.css">
 </head>
 <body>
-    <div class="PageContainer">
+      <div class="PageContainer">
         <div class="NavBarContainer">
-          <a href="index.html" class="Logo"><h2>Nikko</h2></a>
-          <a href="index.html"><img class="FlagUSA" src="./assets/images/AmericanFlag.png"/></a>
+          <div class="nav-left">
+              <a class="Logo" href="./index.html" target="_self" title="Home">
+                  <h2>Nikko</h2>
+              </a>
+              <a class="AmericanFlag" href="./index.html" target="_self" title="Homepage">
+                  <img src="./assets/images/AmericanFlag.png" alt="American Flag" class="AmericanFlagImage">
+              </a>
+          </div>
           <button class="hamburger" id="hamburger">&#9776;</button>
           <div class="NavLinks">
               <a href="./Projects.html">Projects</a>
-              <a href="./public/about.html">About Me</a>
-              <a href="./public/contact.html">Contact Me</a>
+              <a href="./AboutMe.html">About Me</a>
+              <a href="./ContactMe.html">Contact Me</a>
           </div>
         </div>
         <!-- Start of the Project Cards-->

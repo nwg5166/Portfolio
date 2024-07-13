@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="NavBar.css">
+    <link rel="stylesheet" href="AboutMe.css">
+    <title>About Me</title>
+</head>
+<body>
+    <div class="PageContainer">
+        <div class="NavBarContainer">
+            <div class="nav-left">
+                <a class="Logo" href="index.html" target="_self" title="Home">
+                    <h2>Nikko</h2>
+                </a>
+                <a class="AmericanFlag" href="./index.html" target="_self" title="Homepage">
+                    <img src="./assets/images/AmericanFlag.png" alt="American Flag" class="AmericanFlagImage">
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <div class="NavLinks">
+                <a href="./Projects.html">Projects</a>
+                <a href="./AboutMe.html">About Me</a>
+                <a href="./ContactMe.html">Contact Me</a>
+            </div>
+        </div>    
+    </div>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.querySelector('.NavLinks').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
