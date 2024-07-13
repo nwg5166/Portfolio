@@ -76,6 +76,7 @@ body {
     border-radius: .375rem;
     margin-top: auto; /* Push the button to the bottom */
     margin-bottom: 1rem;
+    text-decoration: none;
 }
 
 /* Responsive Design */
