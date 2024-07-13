@@ -54,7 +54,7 @@ body {
     border: none; /* Ensure no border */
     padding: 0; /* Remove any padding */
     border-radius: 0; /* Remove any border radius */
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .NavLinks {
