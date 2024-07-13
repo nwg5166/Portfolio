@@ -34,7 +34,6 @@ body {
     text-decoration: none;
     color: lightskyblue;
     font-size: 1rem;
-    margin-top: 2px;
     padding: 0;
 }
 
@@ -69,6 +68,11 @@ body {
 }
 
 @media (max-width: 490px) {
+    
+    .Logo {
+        margin-top: 2px;
+    }
+
     .NavLinks {
         display: none;
         flex-direction: column;
