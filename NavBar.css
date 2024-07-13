@@ -20,6 +20,7 @@ body {
     height: 60px;
     width: 100%;
     min-width: 200px;
+    line-height: 30px;
 }
 
 .nav-left {
