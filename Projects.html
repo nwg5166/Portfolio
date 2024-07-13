@@ -9,65 +9,65 @@
 </head>
 <body>
     <div class="PageContainer">
-      <div class="NavBarContainer">
-        <h2>Nikko</h2>
-        <img src="./assets/images/AmericanFlag.png"/>
-        <button class="hamburger" id="hamburger">&#9776;</button>
-        <div class="NavLinks">
-            <a href="./Projects.html">Projects</a>
-            <a href="./public/about.html">About Me</a>
-            <a href="./public/contact.html">Contact Me</a>
+        <div class="NavBarContainer">
+          <a href="index.html" class="Logo"><h2>Nikko</h2></a>
+          <a href="index.html"><img class="FlagUSA" src="./assets/images/AmericanFlag.png"/></a>
+          <button class="hamburger" id="hamburger">&#9776;</button>
+          <div class="NavLinks">
+              <a href="./Projects.html">Projects</a>
+              <a href="./public/about.html">About Me</a>
+              <a href="./public/contact.html">Contact Me</a>
+          </div>
         </div>
-      </div>
-      <!-- Start of the Project Cards-->
-    <div class="CardsContainer">
-    <!--Start of Card 1-->
-    <div class="card">
-        <img src="assets/images/MondrianPainting.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <h5 class="card-title">Mondrian Painting</h5>
-          <p class="card-text">Recreated a Mondrian Painting using CSS Grid</p>
-          <a href="./public/MondrianPainting.html" class="btn btn-primary">Link to Project</a>
+        <!-- Start of the Project Cards-->
+        <div class="CardsContainer">
+          <!--Start of Card 1-->
+          <div class="card">
+              <img src="assets/images/MondrianPainting.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Mondrian Painting</h5>
+                <p class="card-text">Recreated a Mondrian Painting using CSS Grid</p>
+                <a href="./public/MondrianPainting.html" class="btn btn-primary">Link to Project</a>
+              </div>
+          </div>
+          <!--Start of Card 2-->
+          <div class="card">
+              <img src="assets/images/CreativeAgency.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Agency Homepage</h5>
+                <p class="card-text">Created a homepage for a creative agency utilizing responsive design</p>
+                <a href="./public/CreativeAgency.html" class="btn btn-primary">Link to Project</a>
+              </div>
+          </div>
+          <!--Start of Card 3-->
+          <div class="card">
+              <img src="assets/images/MemeProject.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Web Development Meme</h5>
+                <p class="card-text">Created a meme using Flexbox</p>
+                <a href="./public/MemeProject.html" class="btn btn-primary">Link to Project</a>
+              </div>
+          </div>
+          <!--Start of Card 4-->
+          <div class="card">
+              <img src="assets/images/BirthdayParty.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Birthday Party Invite</h5>
+                <p class="card-text">Crated a birthday invitation with just HTML</p>
+                <a href="./public/birthday-invite.html" class="btn btn-primary">Link to Project</a>
+              </div>
+          </div>
+          <!--Start of Card 5-->
+          <div class="card">
+              <img src="assets/images/SpanishVocab.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Spanish Vocab</h5>
+                <p class="card-text">Craeted a quick flash card game for popular Spanish colors</p>
+                <a href="./public/SpanishVocab.html" class="btn btn-primary">Link to Project</a>
+              </div>
+          </div>
         </div>
     </div>
-    <!--Start of Card 2-->
-    <div class="card">
-        <img src="assets/images/CreativeAgency.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <h5 class="card-title">Agency Homepage</h5>
-          <p class="card-text">Created a homepage for a creative agency utilizing responsive design</p>
-          <a href="./public/CreativeAgency.html" class="btn btn-primary">Link to Project</a>
-        </div>
-    </div>
-    <!--Start of Card 3-->
-    <div class="card">
-        <img src="assets/images/MemeProject.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <h5 class="card-title">Web Development Meme</h5>
-          <p class="card-text">Created a meme using Flexbox</p>
-          <a href="./public/MemeProject.html" class="btn btn-primary">Link to Project</a>
-        </div>
-    </div>
-    <!--Start of Card 4-->
-    <div class="card">
-        <img src="assets/images/BirthdayParty.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <h5 class="card-title">Birthday Party Invite</h5>
-          <p class="card-text">Crated a birthday invitation with just HTML</p>
-          <a href="./public/birthday-invite.html" class="btn btn-primary">Link to Project</a>
-        </div>
-    </div>
-    <!--Start of Card 5-->
-    <div class="card">
-        <img src="assets/images/SpanishVocab.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <h5 class="card-title">Spanish Vocab</h5>
-          <p class="card-text">Craeted a quick flash card game for popular Spanish colors</p>
-          <a href="./public/SpanishVocab.html" class="btn btn-primary">Link to Project</a>
-        </div>
-    </div>
-  </div>
-</div>
 <script>
     document.getElementById('hamburger').addEventListener('click', function () {
   document.querySelector('.NavLinks').classList.toggle('show');

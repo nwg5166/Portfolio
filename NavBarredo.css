@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.NavBarContainer {
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: navy;
+    color: white;
+    padding: 1rem;
+    height: 60px;
+    width: 100%;
+    min-width: 200px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Logo {
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+.AmericanFlag img {
+    height: 2rem;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 10px;
+    flex: 0 0 auto;
+}
+
+.NavLinks {
+    display: flex;
+    gap: 1rem;
+    margin-left: 3rem;
+}
+
+.NavLinks a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 461px) {
+    .NavLinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 15rem;
+        background-color: navy;
+        text-align: center;
+        padding: 1rem 0;
+        border: 3px solid lightskyblue;
+    }
+
+    .NavLinks.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
